@@ -1,0 +1,2 @@
+thisIsBool=True
+print(thisIsBool)

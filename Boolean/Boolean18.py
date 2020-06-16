@@ -1,0 +1,3 @@
+isAfterSchool=True
+isFinishHomework=False
+print(isAfterSchool and isFinishHomework)

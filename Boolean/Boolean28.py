@@ -1,0 +1,6 @@
+print(8=="8")
+print(17>71)
+print(17<71)
+print("Apple"=="apple")
+print(65+2*3>(65+2)*3)
+print(not ((True or False) and False))

@@ -1,0 +1,11 @@
+foodList=["cake","bread","fish","meat","rice"]
+print(foodList)
+foodList.append("fruit")
+foodList.append("icecream")
+print(foodList)
+print(len(foodList))
+foodList.remove("cake")
+foodList.remove("bread")
+print(foodList)
+foodList.reverse()
+print(foodList)

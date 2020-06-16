@@ -1,0 +1,8 @@
+txtFile=open("/Users/chenchaoyang/Desktop/python/content/content3.txt","a")
+txtFile.write("静夜思\n")
+txtFile.write("唐 李白\n")
+txtFile.write("床前明月光，\n")
+txtFile.write("疑是地上霜。\n")
+txtFile.write("举头望明月，\n")
+txtFile.write("低头思故乡。\n")
+txtFile.close()

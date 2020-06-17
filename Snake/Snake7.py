@@ -25,7 +25,7 @@ def main():
     snakeSpeedClock = pygame.time.Clock()
     startGame(screen)
     while True:
-        music = pygame.mixer.Sound("/Users/chenchaoyang/Desktop/python/Music/Music2.wav") 
+        music = pygame.mixer.Sound("/Users/chenchaoyang/Desktop/python/Python/Music/Music2.wav") 
         music.play(-1)
         runGame(screen,snakeSpeedClock)
         music.stop()

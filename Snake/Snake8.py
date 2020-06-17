@@ -25,13 +25,13 @@ def main():
     snakeSpeedClock = pygame.time.Clock()
     startGame(screen)
     while True:
-        music = pygame.mixer.Sound("/Users/chenchaoyang/Desktop/python/Music/Music2.wav") 
+        music = pygame.mixer.Sound("/Users/chenchaoyang/Desktop/python/Python/Music/Music2.wav") 
         music.play(-1)
         runGame(screen,snakeSpeedClock)
         music.stop()
         gameOver(screen)
 def startGame(screen):
-    gameStart = pygame.image.load("/Users/chenchaoyang/Desktop/python/Photo/Snake start.jpg")
+    gameStart = pygame.image.load("/Users/chenchaoyang/Desktop/python/Python/Photo/Snake start.jpg")
     screen.blit(gameStart,(70,30))
     font = pygame.font.SysFont("SimHei",40)
     tip = font.render("按任意键开始游戏",True,(65,105,225))

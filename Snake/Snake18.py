@@ -25,13 +25,13 @@ def main():
     snakeSpeedClock = pygame.time.Clock()
     startGame(screen)
     while True:
-        music = pygame.mixer.Sound("/Users/chenchaoyang/Desktop/python/Music/Music2.wav") 
+        music = pygame.mixer.Sound("/Users/chenchaoyang/Desktop/python/Python/Music/Music2.wav") 
         music.play(-1)
         runGame(screen,snakeSpeedClock)
         music.stop()
         gameOver(screen)
 def startGame(screen):
-    gameStart = pygame.image.load("/Users/chenchaoyang/Desktop/python/Photo/Snake start.jpg")
+    gameStart = pygame.image.load("/Users/chenchaoyang/Desktop/python/Python/Photo/Snake start.jpg")
     screen.blit(gameStart,(0,0))
     font = pygame.font.SysFont("stsong",40)
     tip = font.render("按任意键开始游戏",True,(65,105,225))
@@ -74,7 +74,7 @@ def runGame(screen,snakeSpeedClock):
         ret = isAlive(snakeCoords)
         if not ret:
             break
-        gameRun = pygame.image.load("/Users/chenchaoyang/Desktop/python/Photo/Snake.jpg")
+        gameRun = pygame.image.load("/Users/chenchaoyang/Desktop/python/Python/Photo/Snake.jpg")
         screen.blit(gameRun,(0,0))
         drawFood(screen,food)
         drawSnake(screen,snakeCoords)
@@ -123,7 +123,7 @@ def isAlive(snakeCoords):
     return tag
 def gameOver(screen):
     screen.fill(WHITE)
-    gameOver = pygame.image.load("/Users/chenchaoyang/Desktop/python/Photo/Game Over.jpg")
+    gameOver = pygame.image.load("/Users/chenchaoyang/Desktop/python/Python/Photo/Game Over.jpg")
     screen.blit(gameOver,(0,0))
     font = pygame.font.SysFont("stsong",36)
     tip = font.render("按Q或者ESC退出游戏，按其他键重新开始游戏",True,(65,105,255))

@@ -1,7 +1,7 @@
 def LoadFromText(sList):
     print("加载已有数据……")
     try:
-        txtFile=open("/Users/chenchaoyang/Desktop/python/File/students.txt","r")
+        txtFile=open("/Users/chenchaoyang/Desktop/python/Python/File/students.txt","r")
         while True:
             line=txtFile.readline()
             if not line or line.strip()==" ":
@@ -17,11 +17,11 @@ def LoadFromText(sList):
                 stu.total=float(s[5])
                 sList.append(stu)
     except:
-        txtFile=open("/Users/chenchaoyang/Desktop/python/File/students.txt","w")
+        txtFile=open("/Users/chenchaoyang/Desktop/python/Python/File/students.txt","w")
         txtFile.close()
         print("加载成功!")
 def AddToText(stu):
-    txtFile=open("/Users/chenchaoyang/Desktop/python/File/students.txt","a")
+    txtFile=open("/Users/chenchaoyang/Desktop/python/Python/File/students.txt","a")
     txtFile.write(stu.ID)
     txtFile.write(" ")
     txtFile.write(stu.name)
@@ -37,7 +37,7 @@ def AddToText(stu):
     print(stu)
     txtFile.close()
 def WriteToText(sList):
-    txtFile=open("/Users/chenchaoyang/Desktop/python/File/students.txt","w")
+    txtFile=open("/Users/chenchaoyang/Desktop/python/Python/File/students.txt","w")
     for stu in sList:
         txtFile.write(stu.ID)
         txtFile.write("")

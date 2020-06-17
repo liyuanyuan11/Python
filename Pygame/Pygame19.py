@@ -3,7 +3,7 @@ pygame.init()
 screen = pygame.display.set_mode([800,600])
 WHITE = (255,255,255)
 BLACK = (0,0,0)
-ball = pygame.image.load("/Users/chenchaoyang/Desktop/python/Photo/pingpang2.png")
+ball = pygame.image.load("/Users/chenchaoyang/Desktop/python/Python/Photo/pingpang2.png")
 ballx = 0
 bally = 0
 speedx = 5
@@ -19,7 +19,7 @@ for i in ZiTi:
 timer = pygame.time.Clock()
 points = 0
 lives = 3
-pop = pygame.mixer.Sound("/Users/chenchaoyang/Desktop/python/Music/Music2.wav")
+pop = pygame.mixer.Sound("/Users/chenchaoyang/Desktop/python/Python/Music/Music2.wav")
 pop.play()
 Running = True
 while Running:

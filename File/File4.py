@@ -1,4 +1,4 @@
-txtFile=open("/Users/chenchaoyang/Desktop/python/content/content3.txt","w")
+txtFile=open("/Users/chenchaoyang/Desktop/python/Python/content/content3.txt","w")
 txtFile.write("春晓\n")
 txtFile.write("唐 孟浩然\n")
 txtFile.write("春眠不觉晓,\n")
